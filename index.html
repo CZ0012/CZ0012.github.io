@@ -5,221 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Chenrui Zhou is a computer science researcher focused on computer vision, 3D vision, diffusion models, and reinforcement learning."
+      content="Chenrui Zhou's personal academic homepage with research interests and education."
     />
     <title>Chenrui Zhou</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="scene" aria-hidden="true">
-      <div class="night-moon"></div>
-      <div class="sakura-branch branch-left"></div>
-      <div class="sakura-branch branch-right"></div>
-      <div class="shrine-silhouette"></div>
-      <div class="danmaku d1"></div>
-      <div class="danmaku d2"></div>
-      <div class="danmaku d3"></div>
-      <div class="petal p1"></div>
-      <div class="petal p2"></div>
-      <div class="petal p3"></div>
-      <div class="petal p4"></div>
-    </div>
-
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#top">Chenrui Zhou</a>
       <nav class="nav-links" aria-label="Sections">
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#interests">Research Interests</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero section">
+      <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Eastern Fantasy Research Archive</p>
+          <p class="section-kicker">Personal Academic Homepage</p>
           <h1>Chenrui Zhou</h1>
-          <p class="hero-subtitle">Computer Science / Machine Learning / Computer Vision</p>
-          <p class="hero-text">
-            I build and analyze machine learning systems for 3D vision,
-            diffusion-based generation, pose estimation, and reinforcement learning.
+          <p class="hero-lede">
+            Research interests in machine learning, computer vision, 3D vision,
+            diffusion-based generation, and reinforcement learning.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="mailto:chenruizhou00@gmail.com">Email Me</a>
-            <a class="button secondary" href="assets/Chenrui_Zhou_Resume_EN.pdf">Download Resume</a>
+            <!-- Resume link intentionally hidden for now.
+            <a class="button primary" href="assets/Chenrui_Zhou_Resume_EN.pdf">Resume</a>
+            -->
+            <a class="button" href="#interests">Research Interests</a>
           </div>
         </div>
 
-        <aside class="profile-panel ornate-panel" aria-label="Profile summary">
-          <div class="hero-art" aria-hidden="true">
-            <div class="moon"></div>
-            <div class="spell-orb orb-one"></div>
-            <div class="spell-orb orb-two"></div>
-            <div class="spell-orb orb-three"></div>
-          </div>
-          <div class="profile-mark" aria-hidden="true">CZ</div>
-          <dl>
-            <div>
-              <dt>Current Focus</dt>
-              <dd>Robust reinforcement learning and prompt-reward coupling</dd>
-            </div>
-            <div>
-              <dt>Research Areas</dt>
-              <dd>Computer vision, 3D vision, diffusion models</dd>
-            </div>
-            <div>
-              <dt>Training</dt>
-              <dd>Johns Hopkins CS, Nanjing University mathematics</dd>
-            </div>
-          </dl>
-        </aside>
+        <figure class="media-slot hero-media">
+          <!-- Replace this figure content with:
+          <img src="assets/profile-or-hero.jpg" alt="Chenrui Zhou" />
+          -->
+          <span>Hero / profile image</span>
+          <small>assets/profile-or-hero.jpg</small>
+        </figure>
       </section>
 
-      <section class="section about ornate-panel" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">Research-oriented CS and ML background</h2>
+      <section id="interests" class="section">
+        <div class="section-heading wide">
+          <p class="section-kicker">Research Interests</p>
+          <h2>Areas I am interested in</h2>
         </div>
-        <p>
-          I am a computer science researcher with graduate training from Johns Hopkins
-          University and a mathematics-centered undergraduate foundation from Nanjing
-          University. My work spans scalable 3D pose estimation, prompt-controlled 3D
-          editing, diffusion model systems, and theoretical questions in reinforcement
-          learning robustness.
-        </p>
+
+        <div class="interest-grid">
+          <article>
+            <span>01</span>
+            <h3>Computer Vision</h3>
+            <p>Visual representation learning, 3D perception, and pose estimation.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Generative Models</h3>
+            <p>Diffusion models, prompt-controlled generation, and 3D editing.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Reinforcement Learning</h3>
+            <p>Robustness, reward design, and generalization in learning systems.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="section split ornate-panel" aria-labelledby="education-title">
+      <section id="education" class="section two-column">
         <div class="section-heading">
-          <p class="eyebrow">Education</p>
-          <h2 id="education-title">Academic training</h2>
+          <p class="section-kicker">Education</p>
+          <h2>Academic background</h2>
         </div>
+
         <div class="timeline">
           <article class="timeline-item">
             <p class="date">Jan 2024 - May 2025</p>
-            <h3>Johns Hopkins University, Whiting School of Engineering</h3>
-            <p>MSE in Computer Science</p>
+            <div>
+              <h3>Johns Hopkins University</h3>
+              <p>MSE in Computer Science, Whiting School of Engineering.</p>
+            </div>
           </article>
+
           <article class="timeline-item">
             <p class="date">Sep 2019 - Jun 2023</p>
-            <h3>Nanjing University, Kuang Yaming Honors School</h3>
-            <p>B.S. in Information and Computational Science (Mathematics)</p>
+            <div>
+              <h3>Nanjing University</h3>
+              <p>B.S. in Information and Computational Science, Kuang Yaming Honors School.</p>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="research" class="section ornate-panel" aria-labelledby="research-title">
-        <div class="section-heading">
-          <p class="eyebrow">Experience and Research</p>
-          <h2 id="research-title">Selected work</h2>
-        </div>
-        <div class="work-grid">
-          <article class="work-card featured">
-            <p class="date">Jul 2025 - Apr 2026</p>
-            <h3>Research Assistant, National University of Singapore</h3>
-            <p>
-              Investigated robustness issues caused by prompt-reward coupling in
-              reinforcement learning, with theoretical analysis of generalization under
-              reward manipulation.
-            </p>
-            <ul>
-              <li>Developed mathematical explanations for structural generalization degradation.</li>
-              <li>Studied how reward design can alter model behavior and robustness.</li>
-            </ul>
-          </article>
-
-          <article class="work-card">
-            <p class="date">May 2024 - Mar 2025</p>
-            <h3>Scaling-up NeMo 3D Pose Estimation Model</h3>
-            <p>Johns Hopkins University, CCVL Lab</p>
-            <ul>
-              <li>Expanded a 3D pose estimation model to large-scale multi-category datasets.</li>
-              <li>Modified PyTorch training and evaluation pipelines for joint multi-category training.</li>
-              <li>Evaluated cross-category generalization for pose estimation tasks.</li>
-            </ul>
-          </article>
-
-          <article class="work-card">
-            <p class="date">Jun 2023 - Jan 2024</p>
-            <h3>P2P-3DEdit: Prompt-to-Prompt 3D Editing via NeRF</h3>
-            <p>Nanjing University</p>
-            <ul>
-              <li>Built a controllable 3D editing pipeline using diffusion-based prompt manipulation.</li>
-              <li>Integrated Prompt-to-Prompt attention control into NeRF-based generation workflows.</li>
-              <li>Connected NeRF systems with Stable Diffusion and SDXL backbones.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="section split ornate-panel" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2 id="projects-title">Independent technical work</h2>
-        </div>
-        <article class="project-card">
-          <p class="date">Independent Project</p>
-          <h3>Quantitative Multi-Factor Stock Strategy Backtest</h3>
-          <p>
-            Implemented a Python backtesting framework for an equity strategy based on
-            valuation and momentum signals, including PE ratio, PB ratio, and price momentum.
-          </p>
-          <ul>
-            <li>Evaluated Sharpe ratio, drawdown, and information coefficient metrics.</li>
-            <li>Designed the framework around reusable data processing and strategy evaluation steps.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="skills" class="section ornate-panel" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2 id="skills-title">Technical toolkit</h2>
-        </div>
-        <div class="skill-groups">
-          <article>
-            <h3>Programming</h3>
-            <p>Python, C/C++, SQL, MATLAB</p>
-          </article>
-          <article>
-            <h3>ML Frameworks</h3>
-            <p>PyTorch, TensorFlow, OpenCV</p>
-          </article>
-          <article>
-            <h3>Research Areas</h3>
-            <p>Computer Vision, Diffusion Models, 3D Vision, Reinforcement Learning</p>
-          </article>
-          <article>
-            <h3>Tools</h3>
-            <p>Linux, Git, Data Processing, Model Training and Evaluation</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split ornate-panel" aria-labelledby="awards-title">
-        <div class="section-heading">
-          <p class="eyebrow">Awards</p>
-          <h2 id="awards-title">Recognition</h2>
-        </div>
-        <div class="awards-list">
-          <article>
-            <h3>Meritorious Winner</h3>
-            <p>Mathematical Contest in Modeling (MCM/ICM), 2021</p>
-          </article>
-          <article>
-            <h3>Outstanding Graduate</h3>
-            <p>Kuang Yaming Honors School, Nanjing University, 2023</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="contact section ornate-panel" aria-labelledby="contact-title">
+      <section id="contact" class="contact-section">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Open to research and engineering conversations</h2>
+          <p class="section-kicker">Contact</p>
+          <h2>Contact details can be added later</h2>
         </div>
-        <a class="contact-link" href="mailto:chenruizhou00@gmail.com">chenruizhou00@gmail.com</a>
+        <div class="contact-placeholder">
+          <!-- Add public contact links here later. -->
+          <span>Reserved for future contact links</span>
+        </div>
       </section>
     </main>
 
