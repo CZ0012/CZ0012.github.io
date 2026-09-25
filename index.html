@@ -5,108 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Chenrui Zhou's personal academic homepage with research interests and education."
+      content="Chenrui Zhou — MSE in Computer Science from Johns Hopkins University. Interested in computer vision, generative models, and reinforcement learning."
     />
+    <meta name="theme-color" content="#0d0b16" />
     <title>Chenrui Zhou</title>
-    <link rel="icon" type="image/png" href="assets/icon.png" />
-    <link rel="apple-touch-icon" href="assets/icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
-  <body>
-    <header class="site-header" aria-label="Primary navigation">
-      <a class="brand" href="#top">Chenrui Zhou</a>
-      <nav class="nav-links" aria-label="Sections">
-        <a href="#interests">Research Interests</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Chenrui Zhou, back to top">Chenrui Zhou<span aria-hidden="true">.</span></a>
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#interests">Research</a>
+          <a href="#education">Education</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
+    <main id="main">
+      <section class="hero" aria-labelledby="name">
         <div class="profile-intro">
-          <figure class="avatar-frame">
-            <img src="assets/headportrait.jpg" alt="Chenrui Zhou avatar" />
-          </figure>
-          <p class="section-kicker">Personal Academic Homepage</p>
-          <h1>Chenrui Zhou</h1>
+          <p class="eyebrow">Machine learning &amp; vision</p>
+          <h1 id="name">Chenrui Zhou<span aria-hidden="true">.</span></h1>
           <p class="hero-lede">
-            Research interests in machine learning, computer vision, 3D vision,
-            diffusion-based generation, and reinforcement learning.
+            MSE in Computer Science<br />
+            <span>Johns Hopkins University</span>
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <!-- Resume link intentionally hidden for now.
-            <a class="button primary" href="assets/Chenrui_Zhou_Resume_EN.pdf">Resume</a>
-            -->
-            <a class="button" href="#interests">Research Interests</a>
+          <div class="hero-actions">
+            <a class="text-link" href="#interests">Explore my interests <span aria-hidden="true">↘</span></a>
+            <!-- Add a LinkedIn link here once a public profile URL is provided. -->
+            <!-- Resume link remains intentionally hidden. -->
           </div>
         </div>
+        <figure class="avatar-frame">
+          <img
+            src="assets/headportrait.webp"
+            width="480"
+            height="617"
+            alt="Chenrui Zhou's illustrated avatar"
+            fetchpriority="high"
+          />
+        </figure>
       </section>
 
-      <section id="interests" class="section">
-        <div class="section-heading wide">
-          <p class="section-kicker">Research Interests</p>
-          <h2>Areas I am interested in</h2>
-        </div>
+      <div class="content-panel">
+        <section id="interests" class="section" aria-labelledby="interests-title">
+          <div class="section-heading">
+            <h2 id="interests-title">Research interests</h2>
+            <span class="heading-line" aria-hidden="true"></span>
+          </div>
+          <div class="interest-grid">
+            <article>
+              <span class="interest-number" aria-hidden="true">01</span>
+              <h3>Computer Vision</h3>
+              <p>Visual representations, 3D perception &amp; pose estimation.</p>
+            </article>
+            <article>
+              <span class="interest-number" aria-hidden="true">02</span>
+              <h3>Generative Models</h3>
+              <p>Diffusion models, controllable generation &amp; 3D editing.</p>
+            </article>
+            <article>
+              <span class="interest-number" aria-hidden="true">03</span>
+              <h3>Reinforcement Learning</h3>
+              <p>Robustness, reward design &amp; generalization.</p>
+            </article>
+          </div>
+        </section>
 
-        <div class="interest-grid">
-          <article>
-            <span>01</span>
-            <h3>Computer Vision</h3>
-            <p>Visual representation learning, 3D perception, and pose estimation.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Generative Models</h3>
-            <p>Diffusion models, prompt-controlled generation, and 3D editing.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Reinforcement Learning</h3>
-            <p>Robustness, reward design, and generalization in learning systems.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="education" class="section two-column">
-        <div class="section-heading">
-          <p class="section-kicker">Education</p>
-          <h2>Academic background</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <p class="date">Jan 2024 - May 2025</p>
-            <div>
-              <h3>Johns Hopkins University</h3>
-              <p>MSE in Computer Science, Whiting School of Engineering.</p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <p class="date">Sep 2019 - Jun 2023</p>
-            <div>
-              <h3>Nanjing University</h3>
-              <p>B.S. in Information and Computational Science, Kuang Yaming Honors School.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Contact details can be added later</h2>
-        </div>
-        <div class="contact-placeholder">
-          <!-- Add public contact links here later. -->
-          <span>Reserved for future contact links</span>
-        </div>
-      </section>
+        <section id="education" class="section education" aria-labelledby="education-title">
+          <div class="section-heading">
+            <h2 id="education-title">Education</h2>
+            <span class="heading-line" aria-hidden="true"></span>
+          </div>
+          <div class="education-list">
+            <article class="education-item">
+              <div class="education-detail">
+                <h3>Johns Hopkins University</h3>
+                <p>MSE in Computer Science</p>
+                <p class="school">Whiting School of Engineering</p>
+              </div>
+              <p class="date"><time datetime="2024-01">Jan 2024</time> <span aria-hidden="true">—</span><span class="sr-only">to</span> <time datetime="2025-05">May 2025</time></p>
+            </article>
+            <article class="education-item">
+              <div class="education-detail">
+                <h3>Nanjing University</h3>
+                <p>B.S. in Information and Computational Science</p>
+                <p class="school">Kuang Yaming Honors School</p>
+              </div>
+              <p class="date"><time datetime="2019-09">Sep 2019</time> <span aria-hidden="true">—</span><span class="sr-only">to</span> <time datetime="2023-06">Jun 2023</time></p>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <p>(c) <span id="year"></span> Chenrui Zhou. Built for GitHub Pages.</p>
+      <p>© <span id="year">2026</span> Chenrui Zhou</p>
+      <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
 
     <script src="script.js"></script>
